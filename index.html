@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>السيرة التفاعلية – د. هيفاء العنزي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+/* VOICE formal and quiet, with one bold idea from her field
+   IDEA an encrypted dossier: a combination-lock dial whose nodes are the CV's sections; opening one decrypts it
+   PICTURE the dial: ticked rings, ten nodes, a gold arm that swings to the chosen node, her monogram at the core
+   COLOUR night green ground (fixed, one visual world), university green lines, gold for keys and dates
+   TYPE IBM Plex Sans Arabic, light display weight against bold names
+   LAYOUT header across the top; panel and dial side by side; on phone: dial emblem, chips, panel */
+:root{color-scheme:light;--bg:#ffffff;--bg2:#faf5f2;--ink:#24191b;--mute:#5f5457;--line:#ece2df;--g:#7a2333;--gold:#86662a;--gold2:#a9873f}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Tajawal",Tahoma,sans-serif;overflow-x:clip;border-top:4px solid var(--g)}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:max(4vw,16px)}
+header{position:relative;overflow:hidden;margin-top:12px;padding:clamp(44px,6vw,72px) clamp(18px,4vw,56px) clamp(36px,5vw,56px);border-radius:32px;background:#fbf8f4;box-shadow:0 1px 0 #efe9dc inset,0 0 0 1px #ece6d8;display:grid;justify-items:center;text-align:center}
+header .silk{position:absolute;inset:auto 0 0 0;width:100%;height:52px;pointer-events:none}
+header .arc{position:absolute;top:-120px;inset-inline-start:-120px;width:340px;height:340px;pointer-events:none}
+header .arc.b{top:auto;bottom:-150px;inset-inline-start:auto;inset-inline-end:-140px;width:380px;height:380px}
+header>*:not(.silk):not(.arc){position:relative}
+.orn{display:inline-block;width:6px;height:6px;transform:rotate(45deg);background:#c8a96a;flex:none}
+.seal{width:56px;height:56px;border-radius:50%;background:var(--g);display:grid;place-items:center;box-shadow:0 0 0 5px #fff,0 0 0 6px var(--gold2);margin-bottom:20px}
+.topbar{display:flex;justify-content:flex-end;padding-top:14px}
+.lang{all:unset;box-sizing:border-box;cursor:pointer;min-height:44px;padding:0 18px;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;font-size:14.5px;font-weight:700;color:var(--g);background:var(--bg)}
+.lang:hover{border-color:var(--g)}.lang:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+[lang=en] .it .d{font-size:13px}
+.bio{margin:20px auto 0;max-width:60ch;font-size:16.5px;line-height:1.95;color:#54494b;font-weight:400}
+h1{margin:0;font-size:clamp(36px,5.2vw,56px);line-height:1.15;font-weight:700;letter-spacing:0;text-wrap:balance;color:#561623}
+h1 b{font-weight:700}
+.role{margin-top:14px;display:flex;align-items:center;justify-content:center;gap:12px;font-size:clamp(15px,1.6vw,18px);color:#7d5f2c;font-weight:500}
+.role::before,.role::after{content:"";flex:none;width:6px;height:6px;transform:rotate(45deg);background:#c8a96a}
+.contact{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:26px}
+.chip{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 16px;border-radius:999px;background:#fff;box-shadow:0 0 0 1px #ebe4d4;font-size:14px;color:#33292b;text-decoration:none;transition:box-shadow .2s,color .2s}
+a.chip:hover{box-shadow:0 0 0 1px #c8a96a;color:var(--g)}
+a.chip:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.chip svg{flex:none;color:#a9873f}
+.figs{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:14px 30px;margin-top:34px}
+.fig{display:flex;align-items:baseline;gap:10px}
+.fig b{font-size:clamp(28px,3vw,36px);font-weight:500;line-height:1.1;color:#561623;white-space:nowrap}
+.fig span{font-size:14px;color:#6b5f62}
+.figsep{width:5px;height:5px;transform:rotate(45deg);background:#c8a96a;flex:none}
+.stage{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(24px,4vw,56px);padding-block:28px 40px;align-items:start}
+.panel{border:1px solid var(--line);border-radius:16px;background:var(--bg2);padding:24px 26px 18px;min-height:520px}
+.state{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--gold)}
+.state svg{flex:none}
+.panel h2{margin:8px 0 2px;font-size:clamp(24px,2.6vw,32px);line-height:1.2;font-weight:700}
+.panel .sub{margin:0 0 10px;color:var(--mute);font-size:15px}
+.it{display:grid;grid-template-columns:128px minmax(0,1fr);gap:16px;padding:13px 0;border-top:1px solid var(--line)}
+.it .d{font-size:13.5px;color:var(--gold);font-weight:600;line-height:1.5}
+.it .h{font-weight:600;font-size:16px;line-height:1.45}
+.it .o{font-size:14.5px;color:var(--mute);margin-top:2px}
+.it ul{margin:6px 0 0;padding-inline-start:18px;font-size:14.5px}
+.it li{margin-bottom:2px}
+.it a{color:var(--gold)}
+.dialbox{position:sticky;top:20px}
+.dial{position:relative;width:100%;max-width:600px;aspect-ratio:1;margin-inline:auto}
+.dial svg{position:absolute;inset:0;width:100%;height:100%}
+.arm{transform-origin:50px 50px;transition:transform .7s cubic-bezier(.6,.05,.2,1)}
+.core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:26%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;text-align:center;background:#7a2333;border:4px solid #fff;box-shadow:0 0 0 1px var(--gold2)}
+.dial .core .key{position:static;inset:auto;display:block;width:clamp(22px,3vw,32px);height:auto;margin:0 auto}.core span{color:#f3e4e6 !important}
+.core b{display:block;font-size:clamp(22px,3vw,34px);color:var(--gold);line-height:1;font-weight:700}
+.core span{display:block;font-size:12px;color:var(--mute);margin-top:6px}
+.node{all:unset;box-sizing:border-box;position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer;padding:6px;border-radius:10px;min-width:44px;min-height:44px;max-width:104px;text-align:center;background:rgba(255,255,255,.9)}
+.node i{width:16px;height:16px;border-radius:50%;border:2px solid var(--gold2);background:var(--bg);transition:background .2s,box-shadow .2s,transform .2s}
+.node span{font-size:13px;line-height:1.3;color:var(--mute);transition:color .2s}
+.node:hover span{color:var(--ink)}
+.node:hover i{transform:scale(1.2)}
+.node[aria-pressed=true] i{background:var(--g);border-color:var(--g);box-shadow:0 0 0 6px rgba(122,35,51,.13)}
+.node[aria-pressed=true] span{color:var(--g);font-weight:700}
+.node:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.hint{text-align:center;font-size:13px;color:var(--mute);margin-top:6px}
+footer{border-top:1px solid var(--line);padding-block:18px 30px;font-size:13px;color:var(--mute);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media(max-width:820px){.stage{grid-template-columns:1fr}.dialbox{position:static;order:-1}.panel{min-height:0}}
+@media(min-width:601px) and (max-width:820px){.dial{max-width:470px}}
+@media(max-width:600px){
+header{border-radius:22px;padding:34px 14px 28px}
+header .arc{width:220px;height:220px;top:-90px;inset-inline-start:-90px}
+header .arc.b{display:none}
+h1{font-size:30px}
+.role{font-size:15px;gap:8px}
+.bio{font-size:15.5px}
+.chip{font-size:13px;min-height:38px;padding:0 12px}
+.figs{flex-direction:column;gap:8px;margin-top:24px}
+.figsep{display:none}
+.fig b{font-size:26px}
+.fig span{font-size:13px}
+.stage{padding-block:8px 28px;gap:12px}
+.dialbox{position:sticky;top:0;z-index:5;background:var(--bg);margin-inline:calc(-1 * max(4vw,16px));padding:10px max(4vw,16px);border-bottom:1px solid var(--line)}
+.dial{max-width:none;aspect-ratio:auto;height:auto}
+.dial svg,.core,.hint{display:none}
+.nodes{display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:2px}
+.nodes::-webkit-scrollbar{display:none}
+.node{position:static;transform:none;flex:none;flex-direction:row;max-width:none;white-space:nowrap;border:1px solid var(--line);border-radius:999px;padding:9px 14px;scroll-snap-align:start;background:var(--bg)}
+.node i{width:10px;height:10px}
+.node span{font-size:14px}
+.node[aria-pressed=true]{background:var(--g);border-color:var(--g)}
+.node[aria-pressed=true] span{color:#fff}
+.node[aria-pressed=true] i{background:#fff;border-color:#fff;box-shadow:none}
+.panel{padding:18px 16px;border-radius:12px;scroll-margin-top:72px}
+.panel h2{font-size:24px}
+.it{grid-template-columns:1fr;gap:2px;padding:12px 0}
+}
+@media(prefers-reduced-motion:reduce){.arm,.node i{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<div class="topbar"><button class="lang" id="lang" aria-label="Switch language"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg><span id="langt">English</span></button></div>
+<header>
+
+<div>
+<h1 data-en="&lt;b&gt;Dr. Haifa A. Alanazi&lt;/b&gt;"><b>د. هيفاء عياد العنزي</b></h1>
+<div class="role" data-en="Assistant Professor of Cybersecurity since March 2024 · Northern Border University">أستاذ مساعد في الأمن السيبراني منذ مارس 2024 · جامعة الحدود الشمالية</div>
+<p class="bio" data-en="A cybersecurity specialist who combines research with academic leadership in scholarly publishing, quality and accreditation. She has a particular commitment to developing the nonprofit sector, leading projects that strengthen its digital readiness and build the capacity of its people, alongside community initiatives that raise cyber awareness. She also provides academic and scientific supervision for student participations in local and international exhibitions, hackathons and scientific forums.">متخصصة في الأمن السيبراني، تجمع بين البحث العلمي والقيادة الأكاديمية في النشر العلمي والجودة والاعتماد. ولها اهتمام خاص بتطوير القطاع غير الربحي، إذ تقود مشاريع لتعزيز جاهزيته الرقمية وبناء قدرات العاملين فيه، إلى جانب مبادرات مجتمعية لنشر الوعي السيبراني. وتتولى الإشراف الأكاديمي والعلمي على مشاركات الطلبة في المعارض والهاكاثونات والملتقيات العلمية محليًا ودوليًا.</p>
+<div class="contact">
+<span class="chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span dir="ltr">haifa.alanazi@nbu.edu.sa</span></span>
+<span class="chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span dir="ltr">+966 55 678 1399</span></span>
+<a class="chip" href="https://scholar.google.com/citations?hl=en&amp;user=WBw3Lc0AAAAJ"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg>Google Scholar</a>
+<a class="chip" href="https://www.linkedin.com/in/dr-haifa-alanazi-a332b030a/"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>LinkedIn</a>
+<a class="chip" href="https://orcid.org/0009-0000-4577-6898"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 8v8M12 8h1.5a4 4 0 0 1 0 8H12z"/></svg>ORCID</a>
+</div>
+</div>
+<div class="figs">
+<div class="fig"><b>4.00</b><span data-en="Doctoral GPA">معدل الدكتوراه</span></div>
+<i class="figsep" aria-hidden="true"></i>
+<div class="fig"><b>8</b><span data-en="Current and previous assignments">تكليفات حالية وسابقة</span></div>
+<i class="figsep" aria-hidden="true"></i>
+<div class="fig"><b>4</b><span data-en="Master's theses supervised">رسائل ماجستير تحت إشرافها</span></div>
+</div>
+</header>
+
+<div class="stage">
+<article class="panel" aria-live="polite">
+<div class="state"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 7.5-2"/></svg><span id="st">تم فك التشفير</span></div>
+<h2 id="pt"></h2>
+<p class="sub" id="ps"></p>
+<div id="pb"></div>
+</article>
+
+<div class="dialbox">
+<div class="dial" id="dial">
+<svg viewBox="0 0 100 100" aria-hidden="true">
+<g id="ticks"></g>
+<circle cx="50" cy="50" r="38" fill="none" stroke="#dcc8c3" stroke-width=".4" stroke-dasharray="1 1.2"/>
+<circle cx="50" cy="50" r="28" fill="none" stroke="#ece2df" stroke-width=".3"/>
+<g class="arm" id="arm"><line x1="50" y1="50" x2="50" y2="15" stroke="#a9873f" stroke-width=".6"/><circle cx="50" cy="15" r="1.1" fill="#a9873f"/></g>
+</svg>
+<div class="core"><div><svg class="key" viewBox="0 0 24 32" aria-hidden="true"><circle cx="12" cy="10" r="7" fill="#e9d3a0"/><path d="M8.5 14 L6.5 29 H17.5 L15.5 14Z" fill="#e9d3a0"/><circle cx="12" cy="10" r="2.4" fill="#7a2333"/></svg><span data-en="Choose a section">اختر قسمًا لفتحه</span></div></div>
+<div class="nodes" id="nodes"></div>
+</div>
+<div class="hint" data-en="Click any node to decrypt its details">اضغط على أي عقدة لفك تشفير تفاصيلها</div>
+</div>
+</div>
+
+<footer><span data-en="Dr. Haifa A. Alanazi · Curriculum Vitae">د. هيفاء عياد العنزي · السيرة الذاتية</span><span data-en="Updated: November 2026">محدّثة: نوفمبر 2026</span></footer>
+</div>
+
+<script>
+{
+const S=[
+{t:"أبرز الإنجازات",sub:"أربعة إنجازات تختصر المسيرة",items:[
+{d:"أكتوبر 2026",h:"مبادرة «مأمن» للتوعية بالأمن السيبراني",o:"نحو 300 زائر و20 طالبة موهوبة، بتغطية قناة الإخبارية (التفاصيل في «المبادرات والمشاريع»)"},
+{d:"2026 – الآن",h:"مشروع الجاهزية الرقمية للقطاع غير الربحي",o:"3 مسارات و9 برامج، برعاية محافظ رفحاء (التفاصيل في «المبادرات والمشاريع»)"},
+{d:"2026",h:"درع التميز في التحول الرقمي والابتكار",o:"مقدم من عميد كلية الحاسبات وتقنية المعلومات"},
+{d:"ديسمبر 2023",h:"أول خريجة بمعدل كامل 4.00",o:"في تاريخ برنامج دكتوراه الأمن السيبراني بجامعة ماريماونت الأمريكية، المصنّف الأول أمريكيًا بين برامج الدكتوراه في المجال (CyberSecurityGuide، 2026)"}]},
+{t:"المؤهلات والزمالات",sub:"ثلاث درجات علمية وزمالتان مهنيتان",items:[
+{d:"ديسمبر 2023",h:"دكتوراه في الأمن السيبراني (D.Sc.)",o:"جامعة ماريماونت – الولايات المتحدة · 4.00 من 4.00",l:["الأطروحة: «تحديد المؤشرات السلوكية للتهديدات السيبرانية الداخلية الخبيثة في قطاع النفط والغاز بالمملكة العربية السعودية»","البرنامج مصنّف الأول أمريكيًا بين برامج الدكتوراه في الأمن السيبراني (CyberSecurityGuide، 2026)"]},
+{d:"2016",h:"ماجستير الأمن السيبراني وضمان المعلومات",o:"جامعة روبرت موريس – الولايات المتحدة · 3.70 من 4.00"},
+{d:"2013",h:"بكالوريوس تقنية المعلومات",o:"جامعة الحدود الشمالية"},
+{d:"سبتمبر – نوفمبر 2026",h:"زمالة قادة التحول الرقمي",o:"معهد البحوث والدراسات – جامعة الأمير مساعد بن عبدالرحمن"},
+{d:"سبتمبر – نوفمبر 2026",h:"زمالة أخصائي قانون الأمن السيبراني",o:"معهد البحوث والدراسات – جامعة الأمير مساعد بن عبدالرحمن"},
+{d:"شهادات",h:"الشهادات الاحترافية",l:["المخترق الأخلاقي المعتمد (CEH)","CompTIA Network+","الحزام الأخضر في سيكس سيجما"]}]},
+{t:"التكليفات الحالية",sub:"خمسة تكليفات أكاديمية وقيادية",items:[
+{d:"نوفمبر 2026 – الآن",h:"رئيسة المعيار الثالث للجودة والاعتماد الأكاديمي",l:["إعداد ومراجعة أدلة وشواهد الاعتماد","تطوير أدوات قياس مخرجات التعلم"]},
+{d:"أكتوبر 2025 – الآن",h:"مديرة تحرير مجلة الشمال لعلوم الحاسب وتقنية المعلومات",o:"NJCSIT · ISSN 2961-4120 · العدد الأول ديسمبر 2026"},
+{d:"ديسمبر 2024 – الآن",h:"مشرفة إدارة المجلات العلمية",o:"مركز الترجمة والتأليف والنشر"},
+{d:"أكتوبر 2024 – الآن",h:"منسقة قسم تقنية المعلومات – شطر الطالبات"},
+{d:"2026 – الآن",h:"عضو وحدة الموهوبين",o:"وكالة الجامعة للشؤون الأكاديمية"}]},
+{t:"التكليفات السابقة",sub:"استشارة وإشراف وتدريب دولي",items:[
+{d:"ديسمبر 2025 – يونيو 2026",h:"مستشارة تطوير الأعمال والتخطيط الاستراتيجي",o:"جمعية تمكين القيادات الأهلية – رفحاء",l:["رئاسة فريق إعداد الخطة الاستراتيجية للجمعية","قيادة التخطيط الاستراتيجي ومتابعة مراحل الاعتماد","تقديم الاستشارات الفنية والإدارية لمجلس الإدارة","تطوير مؤشرات الأداء والمنتجات المؤسسية","دعم اتخاذ القرارات والتطوير المؤسسي"]},
+{d:"أكتوبر 2024 – يناير 2026",h:"مشرفة معمل الابتكار ونادي الأمن السيبراني",o:"كلية الحاسبات وتقنية المعلومات"},
+{d:"يناير – نوفمبر 2023",h:"تدريب مهني دولي",o:"سفارة المملكة العربية السعودية – واشنطن العاصمة"}]},
+{t:"المبادرات والمشاريع",sub:"مبادرة مجتمعية ومشروع تحول رقمي",items:[
+{d:"2026 – الآن",h:"مبادرة «مأمن» للتوعية بالأمن السيبراني",o:"مؤسسة المبادرة وصاحبة فكرتها ومديرتها · وحدة الموهوبين بالشراكة مع جمعية تمكين القيادات الأهلية",l:["نُفذت في ممشى زبيدة بحي الجميماء، رفحاء، يوم 29 أكتوبر 2026","نحو 300 زائر ومشاركة 20 طالبة من وحدة الموهوبين","موافقة بلدية رفحاء وفسح المحافظة، وحضور أمني من شرطة رفحاء","تغطية قناة الإخبارية ومؤثري رفحاء"]},
+{d:"2026 – الآن",h:"مشروع الجاهزية الرقمية للقطاع غير الربحي",o:"مديرة المشروع · تنظيم جمعية تمكين القيادات الأهلية، والشريك الأكاديمي كلية الحاسبات وتقنية المعلومات",l:["برعاية سعادة محافظ رفحاء وبدعم مؤسسة نورة الملاحي الأهلية","المسار الأول: التميز في إدارة التحول الرقمي","المسار الثاني: الابتكار والحلول الذكية","المسار الثالث: الثقة والتأثير الرقمي","9 برامج تدريبية بإجمالي 36 ساعة"]}]},
+{t:"اللجان",sub:"رئاسة وعضوية لجان أكاديمية",items:[
+{d:"نوفمبر 2026 – الآن",h:"رئيسة لجنة النظم والخطط الدراسية"},
+{d:"نوفمبر 2026",h:"عضو لجنة مشاريع التخرج",o:"كلية الحاسبات وتقنية المعلومات"},
+{d:"2026",h:"عضو اللجنة الفرعية لتجهيز الطلبة للاختبارات المعيارية",o:"قسم تقنية المعلومات"},
+{d:"عضوية",h:"عضو لجنة استحداث الماجستير التنفيذي في الأمن السيبراني"},
+{d:"عضوية",h:"عضو لجنة الجودة",o:"قسم نظم المعلومات"}]},
+{t:"التدريس والإشراف",sub:"مقررات الماجستير والبكالوريوس والإشراف البحثي",items:[
+{d:"الماجستير",h:"أساليب البحث العلمي · البرمجة لعلوم البيانات (Python)"},
+{d:"البكالوريوس",h:"تسعة مقررات",l:["الأمن السيبراني · أمن المعلومات · التشفير · البيانات الضخمة","تحليل المخاطر الأمنية · إدارة أمن الشبكات","السياسات والقوانين والامتثال · تحليل وتصميم النظم · قضايا وإدارة تقنية المعلومات"]},
+{d:"2026 – الآن",h:"الإشراف على 4 رسائل ماجستير",l:["آلية دفاع لحماية وكلاء النماذج اللغوية الكبيرة من هجمات حقن الأوامر غير المباشر","الذكاء الاصطناعي للكشف عن تهديدات خصوصية بيانات المستخدم ومنعها","توظيف خصائص مستوى التحكم ومستوى البيانات للكشف عن هجمات حجب الخدمة الموزعة باستخدام تعلم الآلة في الشبكات المعرفة برمجيًا","الكشف الهجين عن تسرب البيانات الحساسة في التفاعلات مع الذكاء الاصطناعي التوليدي"]},
+{d:"البكالوريوس",h:"الإشراف الطلابي",l:["مشاريع التخرج","التدريب الميداني لـ102 طالبة"]}]},
+{t:"المحاضرات والورش",sub:"أربع محاضرات وورش قدمتها",items:[
+{d:"31 أكتوبر 2026",h:"من الفكرة البحثية إلى النشر العلمي",o:"برنامج «آفاق البحث الذكي» – وحدة الدراسات العليا والبحث العلمي، كلية العلوم"},
+{d:"13 مايو 2026",h:"مختبر التحديات ورصد الاحتياجات في القطاع غير الربحي",o:"لقاء «قيادات لمنسوبات القطاع غير الربحي» – جمعية تمكين القيادات الأهلية"},
+{d:"20 مايو 2025",h:"الحوسبة السحابية",o:"جمعية تنمية المواهب برفحاء"},
+{d:"أبريل 2024",h:"مدخل إلى الأمن السيبراني: حماية العالم الرقمي",o:"كلية العلوم برفحاء – جامعة الحدود الشمالية"}]},
+{t:"الدعوات الرسمية",sub:"مشاركات بدعوة رسمية",items:[
+{d:"21–22 أبريل 2025",h:"ملتقى قادة الشمال",o:"بدعوة رسمية شخصية من المدير العام للمعهد السعودي التقني للتعدين، تحت رعاية صاحب السمو الملكي الأمير فيصل بن خالد بن سلطان بن عبدالعزيز، أمير منطقة الحدود الشمالية"},
+{d:"أبريل 2024",h:"ملتقى تحسين الثاني",o:"بدعوة من مكتب التعليم بمحافظة رفحاء، وتقديم ورقة علمية بعنوان: «الأمن السيبراني في التعليم: مفتاح لتحسين جودة التعلم وتعزيز السلامة الرقمية»"}]},
+{t:"النشر والمؤتمرات والمشاركات",sub:"أبحاث محكّمة، ومؤتمرات دولية، ومشاركات طلابية بإشراف أكاديمي وعلمي",items:[
+{d:"الأبحاث",h:"أبحاث محكّمة في مجلات دولية",o:"أمن إنترنت الأشياء · الحوسبة الطرفية · الذكاء الاصطناعي",a:"https://scholar.google.com/citations?hl=en&user=WBw3Lc0AAAAJ",al:"القائمة الكاملة على Google Scholar"},
+{d:"2026",h:"معرض سيول الدولي للاختراعات (SIIF 2026)",o:"إشراف أكاديمي وعلمي على اختراع «نشمية الشمال»: طائرة دون طيار بذراع ذكية لالتقاط النفايات في الروضات"},
+{d:"2026",h:"الملتقى العلمي بجامعة الحدود الشمالية 2026",o:"إشراف أكاديمي وعلمي على مشاركة الطالبات بـ8 ملصقات علمية"},
+{d:"2025",h:"هاكاثون الابتكار والإبداع 2025",o:"إشراف أكاديمي وعلمي على فريقين فائزين",l:["المركز الأول في مسار أبحاث الأمن السيبراني: تحليل سلوك المستخدم لاكتشاف التهديدات بالذكاء الاصطناعي","المركز الرابع في مسار الابتكار: نظام صمام غاز ذكي مرتبط بتطبيق جوال"]},
+{d:"الرياض",h:"تحدي الأمن السيبراني (CTF) – الهيئة الوطنية للأمن السيبراني",o:"إشراف أكاديمي وعلمي على مشاركة الطالبات، وحصولهن على مركز متقدم بين 27 جامعة وطنية"},
+{d:"مارس 2023",h:"ICCWS 2023",o:"المؤتمر الدولي للحرب والأمن السيبراني – ماريلاند، الولايات المتحدة"},
+{d:"أبريل 2021",h:"SRC 2021",o:"مؤتمر أبحاث الطلبة – فرجينيا، الولايات المتحدة"},
+{d:"سبتمبر 2020",h:"ICITST 2020",o:"المؤتمر الدولي لتقنية الإنترنت والمعاملات الآمنة – لندن"}]},
+{t:"التطوير المهني",sub:"ثمانية برامج في الجودة والقيادة والتحول الرقمي",items:[
+{d:"27 أكتوبر 2026",h:"تحليل بيانات الأداء الأكاديمي لاتخاذ قرارات إرشادية فعالة",o:"عمادة التطوير والجودة · 5 ساعات"},
+{d:"26 أكتوبر 2026",h:"توظيف خصائص الخريجين ومخرجات التعلم لمهارات المستقبل",o:"عمادة التطوير والجودة · 5 ساعات"},
+{d:"20–21 أكتوبر 2026",h:"استيفاء شروط الاعتماد البرامجي",o:"عمادة التطوير والجودة · 10 ساعات"},
+{d:"نوفمبر 2025",h:"التميز المؤسسي في منظمات القطاع غير الربحي",o:"مركز مسارات رائدة للتدريب والتطوير · 12 ساعة"},
+{d:"20 أغسطس 2025",h:"التحول الرقمي وأثره على علم المعلومات",o:"جمعية المكتبات والمعلومات السعودية"},
+{d:"5–9 يناير 2025",h:"التقنيات الرقمية ودورها في التعليم وفق رؤية 2030",o:"مؤتمر عطاء العلمي «تمكين 2025» · 3 ساعات"},
+{d:"11 سبتمبر 2024",h:"المهارات الاحترافية في استخدام الفصول الافتراضية",o:"جامعة الحدود الشمالية · ساعتان"},
+{d:"14 مايو 2024",h:"الاحترافية في تفعيل الاختبارات الإلكترونية",o:"جامعة الحدود الشمالية · ساعتان"}]},
+{t:"العضويات واللغات",sub:"جمعيات علمية ومهنية",items:[
+{d:"2026 – الآن",h:"الجمعية العلمية السعودية لتطوير القطاع غير الربحي",o:"جامعة حائل"},
+{d:"2024 – الآن",h:"جمعية تمكين القيادات الأهلية",o:"عضو بالترشيح"},
+{d:"2024 – الآن",h:"الجمعية الوطنية للقيادة والنجاح (NSLS)",o:"الولايات المتحدة · عضوية بالترشيح للتميز الأكاديمي (Academic Excellence)"},
+{d:"اللغات",h:"العربية: اللغة الأم · الإنجليزية: إجادة احترافية"}]}
+];
+const E=[
+{t:"Key achievements",sub:"Four highlights of the career",items:[
+{d:"Oct 2026",h:"Ma’man Cybersecurity Awareness Initiative",o:"About 300 visitors and 20 gifted students, covered by Al-Ekhbariya TV (details under Initiatives & projects)"},
+{d:"2026 – present",h:"Digital Readiness for the Nonprofit Sector",o:"3 tracks and 9 programs under the patronage of the Governor of Rafha (details under Initiatives & projects)"},
+{d:"2026",h:"Excellence Shield in Digital Transformation and Innovation",o:"Awarded by the Dean of the College of Computing and Information Technology"},
+{d:"Dec 2023",h:"First graduate with a perfect 4.00 GPA",o:"In the history of Marymount University’s D.Sc. in Cybersecurity, ranked first in the US among doctoral programs in the field (CyberSecurityGuide, 2026)"}]},
+{t:"Qualifications",sub:"Three degrees and two professional fellowships",items:[
+{d:"Dec 2023",h:"Doctor of Science (D.Sc.) in Cybersecurity",o:"Marymount University, USA · GPA 4.00 / 4.00",l:["Dissertation: “Identification of Behavioral Indicators in Malicious Insiders' Threats in Cybersecurity within the Oil and Gas Sector in the Kingdom of Saudi Arabia”","Program ranked first in the US among cybersecurity doctoral programs (CyberSecurityGuide, 2026)"]},
+{d:"2016",h:"M.S. in Cybersecurity and Information Assurance",o:"Robert Morris University, USA · GPA 3.70 / 4.00"},
+{d:"2013",h:"B.S. in Information Technology",o:"Northern Border University"},
+{d:"Sep – Nov 2026",h:"Digital Transformation Leaders Fellowship",o:"Research and Studies Institute, Prince Musaed bin Abdulrahman University"},
+{d:"Sep – Nov 2026",h:"Cybersecurity Legal Specialist Fellowship",o:"Research and Studies Institute, Prince Musaed bin Abdulrahman University"},
+{d:"Certifications",h:"Professional certifications",l:["Certified Ethical Hacker (CEH)","CompTIA Network+","Six Sigma Green Belt"]}]},
+{t:"Current assignments",sub:"Five academic and leadership assignments",items:[
+{d:"Nov 2026 – present",h:"Chair, Standard 3 for Quality and Academic Accreditation",l:["Preparing and reviewing accreditation evidence","Developing learning outcome assessment tools"]},
+{d:"Oct 2025 – present",h:"Managing Editor, Northern Journal of Computer Science and Information Technology",o:"NJCSIT · ISSN 2961-4120 · first issue December 2026"},
+{d:"Dec 2024 – present",h:"Supervisor, Scientific Journals Administration",o:"Translation, Authorship and Publishing Center"},
+{d:"Oct 2024 – present",h:"Coordinator, IT Department (Female Section)"},
+{d:"2026 – present",h:"Member, Gifted Unit",o:"Vice Presidency for Academic Affairs"}]},
+{t:"Previous assignments",sub:"Consulting, supervision and international training",items:[
+{d:"Dec 2025 – Jun 2026",h:"Business Development and Strategic Planning Consultant",o:"Tamkeen Civil Leaders Association, Rafha",l:["Led the team preparing the association’s strategic plan","Directed strategic planning and followed it through the approval stages","Provided technical and administrative advice to the Board of Directors","Developed performance indicators and institutional products","Supported decision-making and institutional development"]},
+{d:"Oct 2024 – Jan 2026",h:"Supervisor, Innovation Lab and Cybersecurity Club",o:"College of Computing and Information Technology"},
+{d:"Jan – Nov 2023",h:"International professional training",o:"Royal Embassy of Saudi Arabia, Washington, D.C."}]},
+{t:"Initiatives & projects",sub:"A community initiative and a digital transformation project",items:[
+{d:"2026 – present",h:"Ma’man Cybersecurity Awareness Initiative",o:"Founder and director · Gifted Unit in partnership with Tamkeen Civil Leaders Association",l:["Held at Zubaidah Walkway, Al-Jumaima district, Rafha, on 29 October 2026","About 300 visitors and 20 Gifted Unit students","Approved by Rafha Municipality and Governorate, with a security presence from Rafha Police","Covered by Al-Ekhbariya TV and local influencers"]},
+{d:"2026 – present",h:"Digital Readiness for the Nonprofit Sector",o:"Project director · organized by Tamkeen Civil Leaders Association with the College of Computing and IT as academic partner",l:["Under the patronage of the Governor of Rafha, supported by Noura Al-Mallahi Foundation","Track 1: Excellence in digital transformation management","Track 2: Innovation and smart solutions","Track 3: Digital trust and impact","9 training programs, 36 hours in total"]}]},
+{t:"Committees",sub:"Committee chair and memberships",items:[
+{d:"Nov 2026 – present",h:"Chair, Regulations and Study Plans Committee"},
+{d:"Nov 2026",h:"Member, Graduation Projects Committee",o:"College of Computing and Information Technology"},
+{d:"2026",h:"Member, Standardized Test Preparation Subcommittee",o:"IT Department"},
+{d:"Member",h:"Member, Executive Master’s in Cybersecurity Development Committee"},
+{d:"Member",h:"Member, Quality Committee",o:"Information Systems Department"}]},
+{t:"Teaching & supervision",sub:"Graduate and undergraduate courses and research supervision",items:[
+{d:"Master’s",h:"Research Methods · Programming for Data Science (Python)"},
+{d:"Bachelor’s",h:"Nine courses",l:["Cybersecurity · Information Security · Cryptography · Big Data","Security Risk Analysis · Network Security Administration","Policy, Legal, Ethics and Compliance · Systems Analysis and Design · IT Issues and Management"]},
+{d:"2026 – present",h:"Supervising 4 master’s theses",l:["A Defense Mechanism for Protecting Large Language Model Agents Against Indirect Prompt Injection Attacks","Artificial Intelligence for Detecting and Preventing User Data Privacy Threats","Leveraging Control and Data Plane Features for ML-Based DDoS Detection in Software-Defined Networks","Hybrid Detection of Sensitive Data Leakage in Generative AI Interactions"]},
+{d:"Bachelor’s",h:"Student supervision",l:["Graduation projects","Summer field training for 102 students"]}]},
+{t:"Lectures & workshops",sub:"Four lectures and workshops delivered",items:[
+{d:"31 Oct 2026",h:"From Research Idea to Scientific Publication",o:"Smart Research Horizons program, Graduate Studies and Research Unit, College of Science"},
+{d:"13 May 2026",h:"Challenges and Needs Lab for the Nonprofit Sector",o:"Leaders for Nonprofit Sector Women meeting, Tamkeen Civil Leaders Association"},
+{d:"20 May 2025",h:"Cloud Computing",o:"Talent Development Association, Rafha"},
+{d:"Apr 2024",h:"Introduction to Cybersecurity: Protecting the Digital World",o:"College of Science in Rafha, Northern Border University"}]},
+{t:"Official invitations",sub:"Participation by official invitation",items:[
+{d:"21 – 22 Apr 2025",h:"Northern Leaders Forum",o:"By personal official invitation from the Director General of the Saudi Technical Institute for Mining, under the patronage of HRH Prince Faisal bin Khalid bin Sultan bin Abdulaziz, Emir of the Northern Borders Region"},
+{d:"Apr 2024",h:"Tahseen Forum II",o:"Invited by the Rafha Education Office; presented the paper “Cybersecurity in Education: A Key to Improving Learning Quality and Enhancing Digital Safety”"}]},
+{t:"Publications & participations",sub:"Peer-reviewed research, international conferences, and student participations under her academic and scientific supervision",items:[
+{d:"Research",h:"Peer-reviewed articles in international journals",o:"IoT security · edge computing · artificial intelligence",a:"https://scholar.google.com/citations?hl=en&user=WBw3Lc0AAAAJ",al:"Full list on Google Scholar"},
+{d:"2026",h:"Seoul International Invention Fair (SIIF 2026)",o:"Academic and scientific supervisor of the Nashmiyah Al-Shamal invention: a drone with a smart gripper that collects litter in desert meadows"},
+{d:"2026",h:"Northern Border University Scientific Forum 2026",o:"Academic and scientific supervision of students presenting 8 scientific posters"},
+{d:"2025",h:"Innovation and Creativity Hackathon 2025",o:"Academic and scientific supervision of two winning teams",l:["First place, cybersecurity research track: user behavior analysis for AI-based threat detection","Fourth place, innovation track: a smart gas valve linked to a mobile app"]},
+{d:"Riyadh",h:"Cybersecurity Challenge (CTF), National Cybersecurity Authority",o:"Academic and scientific supervision of students who achieved an advanced ranking among 27 national universities"},
+{d:"Mar 2023",h:"ICCWS 2023",o:"International Conference on Cyber Warfare and Security, Maryland, USA"},
+{d:"Apr 2021",h:"SRC 2021",o:"Student Research Conference, Virginia, USA"},
+{d:"Sep 2020",h:"ICITST 2020",o:"International Conference for Internet Technology and Secured Transactions, London"}]},
+{t:"Professional development",sub:"Eight programs in quality, leadership and digital transformation",items:[
+{d:"27 Oct 2026",h:"Analyzing Academic Performance Data for Effective Advising Decisions",o:"Deanship of Development and Quality · 5 hours"},
+{d:"26 Oct 2026",h:"Using Graduate Attributes and Learning Outcomes for Future Skills",o:"Deanship of Development and Quality · 5 hours"},
+{d:"20 – 21 Oct 2026",h:"Meeting Program Accreditation Requirements",o:"Deanship of Development and Quality · 10 hours"},
+{d:"Nov 2025",h:"Institutional Excellence in Nonprofit Organizations",o:"Masarat Raeda Training and Development Center · 12 hours"},
+{d:"20 Aug 2025",h:"Digital Transformation and Its Impact on Information Science",o:"Saudi Library and Information Association"},
+{d:"5 – 9 Jan 2025",h:"Digital Technologies in Education under Vision 2030",o:"Ataa Annual Scientific Conference “Tamkeen 2025” · 3 hours"},
+{d:"11 Sep 2024",h:"Professional Skills in Using Virtual Classrooms",o:"Northern Border University · 2 hours"},
+{d:"14 May 2024",h:"Professionalism in Running Electronic Exams",o:"Northern Border University · 2 hours"}]},
+{t:"Memberships & languages",sub:"Scientific and professional associations",items:[
+{d:"2026 – present",h:"Saudi Scientific Society for Nonprofit Sector Development",o:"University of Ha’il"},
+{d:"2024 – present",h:"Tamkeen Civil Leaders Association",o:"Member by nomination"},
+{d:"2024 – present",h:"The National Society of Leadership and Success (NSLS)",o:"USA · Membership by nomination for Academic Excellence"},
+{d:"Languages",h:"Arabic: native · English: professional proficiency"}]}
+];
+let L='ar';
+const D=()=>L==='ar'?S:E;
+const N=S.length,step=360/N;
+const ticks=document.getElementById('ticks');
+let tk='';for(let i=0;i<72;i++){const a=i*5*Math.PI/180,r1=i%6?46.6:45.2,r2=48;tk+=`<line x1="${50+r1*Math.sin(a)}" y1="${50-r1*Math.cos(a)}" x2="${50+r2*Math.sin(a)}" y2="${50-r2*Math.cos(a)}" stroke="${i%6?'#e6d8d4':'#a9873f'}" stroke-width="${i%6?.3:.5}"/>`}
+ticks.innerHTML=tk;
+const nodes=document.getElementById('nodes');
+const drawNodes=()=>{nodes.innerHTML=D().map((s,i)=>{const a=i*step*Math.PI/180,x=50+38*Math.sin(a),y=50-38*Math.cos(a);return `<button class="node" data-i="${i}" aria-pressed="${i===cur}" style="left:${x}%;top:${y}%"><i></i><span>${s.t}</span></button>`}).join('')};
+const arm=document.getElementById('arm'),pt=document.getElementById('pt'),ps=document.getElementById('ps'),pb=document.getElementById('pb'),st=document.getElementById('st');
+const GLA='ابتثجحخدذرزسشصضطظعغفقكلمنهوي٠١٢٣٤٥٦٧٨٩#$%&*+=<>',GLE='ABCDEFGHJKLMNPQRSTUVWXYZabcdefghkmnpqrstuvwxyz0123456789#$%&*+=<>';
+let GL=GLA;
+const ST={ar:['تم فك التشفير','جارٍ فك التشفير…'],en:['Decrypted','Decrypting…']};
+const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let rot=0,cur=-1,run=0;
+const row=it=>`<div class="it"><div class="d" data-x>${it.d}</div><div><div class="h" data-x>${it.h}</div>${it.o?`<div class="o" data-x>${it.o}</div>`:''}${it.l?`<ul>${it.l.map(x=>`<li data-x>${x}</li>`).join('')}</ul>`:''}${it.a?`<div class="o"><a href="${it.a}">${it.al}</a></div>`:''}</div></div>`;
+const decrypt=(els,id)=>{
+if(still)return;
+const list=[...els].map((el,k)=>({el,t:el.textContent,start:k*28}));
+list.forEach(o=>{o.el.textContent=o.t.replace(/\S/g,()=>GL[Math.random()*GL.length|0])});
+const t0=performance.now(),dur=520;
+const tick=now=>{
+if(id!==run)return;
+let done=true;
+for(const o of list){
+const p=Math.min(1,Math.max(0,(now-t0-o.start)/dur));
+if(p<1)done=false;
+const n=Math.floor(o.t.length*p);
+let s=o.t.slice(0,n);
+for(let j=n;j<o.t.length;j++){const c=o.t[j];s+=/\s/.test(c)?c:GL[Math.random()*GL.length|0]}
+o.el.textContent=s;
+}
+if(!done)requestAnimationFrame(tick);else st.textContent=ST[L][0];
+};
+st.textContent=ST[L][1];
+requestAnimationFrame(tick);
+};
+const show=(i,force)=>{
+if(i===cur&&!force)return;
+const s=D()[i];
+let target=i*step,d=((target-rot)%360+540)%360-180;rot+=d;
+arm.style.transform=`rotate(${rot}deg)`;
+nodes.querySelectorAll('.node').forEach((b,k)=>b.setAttribute('aria-pressed',k===i?'true':'false'));
+pt.textContent=s.t;ps.textContent=s.sub;
+pb.innerHTML=s.items.map(row).join('');
+cur=i;run++;
+decrypt([pt,...pb.querySelectorAll('[data-x]')],run);
+};
+const phone=matchMedia('(max-width: 600px)');
+const panel=document.querySelector('.panel');
+nodes.addEventListener('click',e=>{const b=e.target.closest('.node');if(!b)return;show(+b.dataset.i);if(phone.matches){b.scrollIntoView({inline:'center',block:'nearest',behavior:still?'auto':'smooth'});if(panel.getBoundingClientRect().top<0)panel.scrollIntoView({block:'start',behavior:still?'auto':'smooth'})}});
+nodes.addEventListener('keydown',e=>{const b=e.target.closest('.node');if(!b)return;let k=+b.dataset.i;if(e.key==='ArrowLeft'||e.key==='ArrowDown')k=(k+1)%N;else if(e.key==='ArrowRight'||e.key==='ArrowUp')k=(k-1+N)%N;else return;e.preventDefault();nodes.children[k].focus();show(k)});
+const tx=[...document.querySelectorAll('[data-en]')];
+tx.forEach(el=>{el.dataset.ar=el.innerHTML});
+const langt=document.getElementById('langt');
+const setLang=l=>{
+L=l;GL=l==='ar'?GLA:GLE;
+const root=document.documentElement;root.lang=l;root.dir=l==='ar'?'rtl':'ltr';
+tx.forEach(el=>{el.innerHTML=l==='ar'?el.dataset.ar:el.dataset.en});
+langt.textContent=l==='ar'?'English':'العربية';
+document.title=l==='ar'?'السيرة التفاعلية – د. هيفاء العنزي':'Interactive CV – Dr. Haifa Alanazi';
+const k=cur<0?0:cur;cur=-1;drawNodes();show(k,true);
+};
+document.getElementById('lang').addEventListener('click',()=>{const l=L==='ar'?'en':'ar';setLang(l);try{history.replaceState(null,'',l==='en'?'#en':location.pathname+location.search)}catch(e){}});
+drawNodes();
+setLang(location.hash==='#en'?'en':'ar');
+}
+</script>
+</body>
+</html>
