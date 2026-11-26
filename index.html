@@ -73,6 +73,11 @@ a.chip:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .node[aria-pressed=true] span{color:var(--g);font-weight:700}
 .node:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .hint{text-align:center;font-size:13px;color:var(--mute);margin-top:6px}
+.core .cl{display:none;color:#fff !important;font-size:14.5px;font-weight:700;line-height:1.35;margin-top:6px;padding:0 8px}
+.pnav{display:none;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.pbtn{all:unset;box-sizing:border-box;cursor:pointer;min-height:40px;padding:0 14px;display:inline-flex;align-items:center;border-radius:999px;background:var(--bg);box-shadow:0 0 0 1px var(--line);font-size:14px;font-weight:700;color:var(--g)}
+.pbtn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.pbtn.up{color:var(--mute);font-weight:500}
 footer{border-top:1px solid var(--line);padding-block:18px 30px;font-size:13px;color:var(--mute);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 @media(max-width:820px){.stage{grid-template-columns:1fr}.dialbox{position:static;order:-1}.panel{min-height:0}}
 @media(min-width:601px) and (max-width:820px){.dial{max-width:470px}}
@@ -89,17 +94,16 @@ h1{font-size:30px}
 .fig b{font-size:26px}
 .fig span{font-size:13px}
 .stage{padding-block:8px 28px;gap:12px}
-.dialbox{position:sticky;top:0;z-index:5;background:var(--bg);margin-inline:calc(-1 * max(4vw,16px));padding:10px max(4vw,16px);border-bottom:1px solid var(--line)}
-.dial{max-width:none;aspect-ratio:auto;height:auto}
-.dial svg,.core,.hint{display:none}
-.nodes{display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:2px}
-.nodes::-webkit-scrollbar{display:none}
-.node{position:static;transform:none;flex:none;flex-direction:row;max-width:none;white-space:nowrap;border:1px solid var(--line);border-radius:999px;padding:9px 14px;scroll-snap-align:start;background:var(--bg)}
-.node i{width:10px;height:10px}
-.node span{font-size:14px}
-.node[aria-pressed=true]{background:var(--g);border-color:var(--g)}
-.node[aria-pressed=true] span{color:#fff}
-.node[aria-pressed=true] i{background:#fff;border-color:#fff;box-shadow:none}
+.dialbox{position:static}
+.dial{max-width:380px}
+.core{width:46%}
+.core .ch{display:none}
+.core .cl{display:block}
+.hint{display:none}
+.node{padding:0;min-width:44px;min-height:44px;justify-content:center;background:transparent;max-width:none}
+.node span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.node i{width:15px;height:15px}
+.pnav{display:flex}
 .panel{padding:18px 16px;border-radius:12px;scroll-margin-top:72px}
 .panel h2{font-size:24px}
 .it{grid-template-columns:1fr;gap:2px;padding:12px 0}
@@ -120,9 +124,9 @@ h1{font-size:30px}
 <div class="contact">
 <span class="chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span dir="ltr">haifa.alanazi@nbu.edu.sa</span></span>
 <span class="chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span dir="ltr">+966 55 678 1399</span></span>
-<a class="chip" href="https://scholar.google.com/citations?hl=en&amp;user=WBw3Lc0AAAAJ"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg>Google Scholar</a>
-<a class="chip" href="https://www.linkedin.com/in/dr-haifa-alanazi-a332b030a/"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>LinkedIn</a>
-<a class="chip" href="https://orcid.org/0009-0000-4577-6898"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 8v8M12 8h1.5a4 4 0 0 1 0 8H12z"/></svg>ORCID</a>
+<a class="chip" href="https://scholar.google.com/citations?hl=en&amp;user=WBw3Lc0AAAAJ" target="_blank" rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg>Google Scholar</a>
+<a class="chip" href="https://www.linkedin.com/in/%D8%AF-%D9%87%D9%8A%D9%81%D8%A7%D8%A1-%D8%A7%D9%84%D8%B9%D9%86%D8%B2%D9%8A-a332b030a/" target="_blank" rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>LinkedIn</a>
+<a class="chip" href="https://orcid.org/0009-0000-4577-6898" target="_blank" rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 8v8M12 8h1.5a4 4 0 0 1 0 8H12z"/></svg>ORCID</a>
 </div>
 </div>
 <div class="figs">
@@ -136,6 +140,7 @@ h1{font-size:30px}
 
 <div class="stage">
 <article class="panel" aria-live="polite">
+<div class="pnav"><button class="pbtn" id="prv" data-en="Previous">السابق</button><button class="pbtn" id="nxt" data-en="Next">التالي</button><button class="pbtn up" id="upb" data-en="Back to the dial ↑">العودة للقفل ↑</button></div>
 <div class="state"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 7.5-2"/></svg><span id="st">تم فك التشفير</span></div>
 <h2 id="pt"></h2>
 <p class="sub" id="ps"></p>
@@ -150,7 +155,7 @@ h1{font-size:30px}
 <circle cx="50" cy="50" r="28" fill="none" stroke="#ece2df" stroke-width=".3"/>
 <g class="arm" id="arm"><line x1="50" y1="50" x2="50" y2="15" stroke="#a9873f" stroke-width=".6"/><circle cx="50" cy="15" r="1.1" fill="#a9873f"/></g>
 </svg>
-<div class="core"><div><svg class="key" viewBox="0 0 24 32" aria-hidden="true"><circle cx="12" cy="10" r="7" fill="#e9d3a0"/><path d="M8.5 14 L6.5 29 H17.5 L15.5 14Z" fill="#e9d3a0"/><circle cx="12" cy="10" r="2.4" fill="#7a2333"/></svg><span data-en="Choose a section">اختر قسمًا لفتحه</span></div></div>
+<div class="core"><div><svg class="key" viewBox="0 0 24 32" aria-hidden="true"><circle cx="12" cy="10" r="7" fill="#e9d3a0"/><path d="M8.5 14 L6.5 29 H17.5 L15.5 14Z" fill="#e9d3a0"/><circle cx="12" cy="10" r="2.4" fill="#7a2333"/></svg><span class="ch" data-en="Choose a section">اختر قسمًا لفتحه</span><span class="cl" id="cl"></span></div></div>
 <div class="nodes" id="nodes"></div>
 </div>
 <div class="hint" data-en="Click any node to decrypt its details">اضغط على أي عقدة لفك تشفير تفاصيلها</div>
@@ -314,7 +319,7 @@ let GL=GLA;
 const ST={ar:['تم فك التشفير','جارٍ فك التشفير…'],en:['Decrypted','Decrypting…']};
 const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
 let rot=0,cur=-1,run=0;
-const row=it=>`<div class="it"><div class="d" data-x>${it.d}</div><div><div class="h" data-x>${it.h}</div>${it.o?`<div class="o" data-x>${it.o}</div>`:''}${it.l?`<ul>${it.l.map(x=>`<li data-x>${x}</li>`).join('')}</ul>`:''}${it.a?`<div class="o"><a href="${it.a}">${it.al}</a></div>`:''}</div></div>`;
+const row=it=>`<div class="it"><div class="d" data-x>${it.d}</div><div><div class="h" data-x>${it.h}</div>${it.o?`<div class="o" data-x>${it.o}</div>`:''}${it.l?`<ul>${it.l.map(x=>`<li data-x>${x}</li>`).join('')}</ul>`:''}${it.a?`<div class="o"><a href="${it.a}" target="_blank" rel="noopener noreferrer">${it.al}</a></div>`:''}</div></div>`;
 const decrypt=(els,id)=>{
 if(still)return;
 const list=[...els].map((el,k)=>({el,t:el.textContent,start:k*28}));
@@ -342,14 +347,17 @@ const s=D()[i];
 let target=i*step,d=((target-rot)%360+540)%360-180;rot+=d;
 arm.style.transform=`rotate(${rot}deg)`;
 nodes.querySelectorAll('.node').forEach((b,k)=>b.setAttribute('aria-pressed',k===i?'true':'false'));
-pt.textContent=s.t;ps.textContent=s.sub;
+pt.textContent=s.t;ps.textContent=s.sub;document.getElementById('cl').textContent=s.t;
 pb.innerHTML=s.items.map(row).join('');
 cur=i;run++;
 decrypt([pt,...pb.querySelectorAll('[data-x]')],run);
 };
 const phone=matchMedia('(max-width: 600px)');
 const panel=document.querySelector('.panel');
-nodes.addEventListener('click',e=>{const b=e.target.closest('.node');if(!b)return;show(+b.dataset.i);if(phone.matches){b.scrollIntoView({inline:'center',block:'nearest',behavior:still?'auto':'smooth'});if(panel.getBoundingClientRect().top<0)panel.scrollIntoView({block:'start',behavior:still?'auto':'smooth'})}});
+nodes.addEventListener('click',e=>{const b=e.target.closest('.node');if(!b)return;show(+b.dataset.i);if(phone.matches)setTimeout(()=>panel.scrollIntoView({block:'start',behavior:still?'auto':'smooth'}),350)});
+document.getElementById('prv').addEventListener('click',()=>show((cur-1+N)%N));
+document.getElementById('nxt').addEventListener('click',()=>show((cur+1)%N));
+document.getElementById('upb').addEventListener('click',()=>document.getElementById('dial').scrollIntoView({block:'center',behavior:still?'auto':'smooth'}));
 nodes.addEventListener('keydown',e=>{const b=e.target.closest('.node');if(!b)return;let k=+b.dataset.i;if(e.key==='ArrowLeft'||e.key==='ArrowDown')k=(k+1)%N;else if(e.key==='ArrowRight'||e.key==='ArrowUp')k=(k-1+N)%N;else return;e.preventDefault();nodes.children[k].focus();show(k)});
 const tx=[...document.querySelectorAll('[data-en]')];
 tx.forEach(el=>{el.dataset.ar=el.innerHTML});
